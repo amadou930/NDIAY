@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8">
+  <title>Recrutement</title>
+  <link rel="stylesheet" href="../styles/style.css">
+</head>
+<body>
+<div id="date"></div>
+<div id="page">
+  <div id="banniere"></div>
+  <div id="image-banniere"></div>
+  <div id="menu">
+    <ul>
+      <li><a href="index.html">Accueil</a></li>
+      <li><a href="presentation.html">Présentation</a></li>
+      <li><a href="recrutement.html">Recrutement</a></li>
+      <li><a href="calendrier.html">Calendrier</a></li>
+      <li><a href="inscription.html">Inscription</a></li>
+    </ul>
+  </div>
+  <p class='defil_parent'>
+    <span class="defil"> Chers étudiants,J’ai le plaisir de vous informer que la campagne de réinscription et d'inscription 2019-2020 de l’école  « 2AM », démarre le Lundi 6 septembre 2019 à 8heures.</span>
+  </p>   
+  <div id="contenu">
+    <div >
+      <h2>Rejoignez l'equipe Chez 2AM</h2>
+      <h3>Vous êtes dynamique?</h3>
+      <p>Vous aimez enseigner la science?</p>
+      <p>Alors rejoignez l'équipe Chez 2AM!</p>
+      <p>Envoyez nous votre CV et une lettre de motivation à cette adresse <a href="ecole2AM@yahoo.fr">ecole2AM@yahoo.fr</a></p>
+      <p>Vous pouvez aussi remplir ce formulaire</p>
+      <div id="div1"> 
+        <form>
+            <input type="radio" name="sexe" value="M" id="M" >
+            <label for="M"> M</label>
+            <input type="radio" name="sexe" value="Mme" id="Mme" checked="checked" >
+            <label for="Mme"> Mme</label>
+            <input type="radio" name="sexe" value="Mlle" id="Mlle">
+            <label for="Mlle"> Mlle</label>
+        </form> 
+       <form method="post" action="traitement.php">
+            <p><label for="Nom"> Nom: </label>
+            <input type="text" name="Nom" id="Nom"  maxlength="20" required size="12">
+            <label for="Prenom"> Prenom: </label>
+            <input type="text" name="Prenom" id="Prenom"  maxlength="6" required size="12"></p>
+            <p><label for="N_et_rue"> N et rue: </label>
+            <input class='coul' type="text" name="Netrue" id="N_et_rue" required  maxlength="20" size="64"></p>
+            <p><label for="Code_postale"> Code postale: </label>
+                <input class='coul' type="text" name="Code_postale" id="Code_postale" required   maxlength="6" size="2">
+                <label  for="Ville"> Ville: </label>
+                <input id='Ville' type="text" name="ville"  maxlength="20" size="35" required>
+                <SELECT class='select' name="nom" size="1">
+                   <OPTION>Autre</OPTION>
+                   <OPTION>Dakar</OPTION>
+                   <OPTION>Banjul</OPTION>
+                   <OPTION>Madrid</OPTION>
+                   <OPTION>Dijon</OPTION>
+                </SELECT>
+            </p>
+            <p><label for="Votremessage"> Votre message </label>
+                <textarea   name="Votremessage" id="Votremessage"  maxlength="1200" required ></textarea></p>
+                <p><label for="email"> Adresse E-mail: </label>
+                <input type="email" name="email" id="email"   maxlength="20" size="35" required></p>
+       </form> 
+       <form>
+          <input type="submit" value="Envoyer" onclick="Valider()"/>
+          <input type="reset" value="Annuler" />
+       </form>
+      </div>
+      <h2>&nbsp;</h2>
+      <p>&nbsp;</p>
+      <p>&nbsp;</p>
+    </div>
+    <div id="suipre">
+      <ul>
+       <li><form>
+          <input class='boutonn' type = "button" value = "Retour!"  onclick = "history.back()">
+       </form></li>
+       <form  action="presentation.html">
+        <input class='bouton' type = "submit" value = "suivant" id="suivant">
+     </form>
+      </ul> 
+     </div>
+    <div id='footer'>
+      <div id='reseau'>
+        <p>Suivez nous </p>
+            <p><a href="https://www.instagram.com/2am_lofficiel/?hl=fr"><img class='insta' src="../média/insta.png" alt="insta"></a> </p>
+            <p><a href="https://www.linkedin.com/in/ecole-2am-944566198/"><img class='lk' src="../média/lk.png" alt="linkdl"></a></p>
+            <p> <a href="https://facebook.com"><img class='fb' src="../média/fb.png" alt="fb"></a></p>
+            <p><a href="twitter.com"><img class='tw' src="../média/tw.jpeg" alt="twitter"></a></p>
+      </div>
+      <div id='logo'>
+        <img class="imlogo" src="../média/logo.png" alt="contact">
+        <p>Contact: <a href="" >2am@gmail.com</a></p>
+        
+      </div>
+      <div >
+        <p>
+           <span class='ct'>Ecole 2AM</span><br/>
+          <span class="ct"> 80 rue allain savary</span><br/>
+          <span class="ct"> BP 21000 Dijon</span><br/>
+          <span class="ct"> Tel: 330751436092</span>
+        </p>
+      </div>
+     <p class='rep'>© 2AM - Toute reproduction interdite</p>  
+      
+    </div>
+    </div>  
+</div>
+       
+       
+<script src="../javascript/script.js"></script>    
+</body>
+</html>
